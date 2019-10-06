@@ -1,35 +1,43 @@
-from selenium import webdriver #line:1
-from selenium .webdriver .common .keys import Keys #line:2
-import time #line:3
-print ("Welcome to AutoFollower Bot for Instagram. Made by Iconz")#line:5
-username =input ("Email: ")#line:6
-password =input ("Password: ")#line:7
-class TwitterBot :#line:8
-    def __init__ (OOOO0O00OOOOOOOO0 ,O0OOOO0O0000OO0OO ,O00OOOOO00000O00O ):#line:9
-        OOOO0O00OOOOOOOO0 .username =O0OOOO0O0000OO0OO #line:10
-        OOOO0O00OOOOOOOO0 .password =O00OOOOO00000O00O #line:11
-        OOOO0O00OOOOOOOO0 .bot =webdriver .Firefox ()#line:12
-    def login (O0OOOOO000OO0O0OO ):#line:14
-        OO0O000O00000OOOO =O0OOOOO000OO0O0OO .bot #line:15
-        OO0O000O00000OOOO .get ('https://www.instagram.com/accounts/login/')#line:16
-        time .sleep (4 )#line:17
-        OO00O000O0OOO0OO0 =OO0O000O00000OOOO .find_element_by_name ('username')#line:18
-        OO000O00000000O00 =OO0O000O00000OOOO .find_element_by_name ('password')#line:19
-        OO00O000O0OOO0OO0 .clear ()#line:20
-        OO000O00000000O00 .clear ()#line:21
-        OO00O000O0OOO0OO0 .send_keys (O0OOOOO000OO0O0OO .username )#line:22
-        OO000O00000000O00 .send_keys (O0OOOOO000OO0O0OO .password )#line:23
-        OO000O00000000O00 .send_keys (Keys .RETURN )#line:24
-        time .sleep (4 )#line:25
-    def follow (OO0O0OOO0OOO0000O ):#line:27
-        O0O0000OOOOO00O0O =OO0O0OOO0OOO0000O .bot #line:28
-        OO00000O0OOOO00OO =0 #line:29
-        for OOOO00000000O00O0 in range (1 ,1000000 ):#line:30
-            O0O0000OOOOO00O0O .get ('https://www.instagram.com/explore/people/suggested/')#line:31
-            time .sleep (5 )#line:32
-            O0O0000OOOOO00O0O .find_element_by_tag_name ('button').click ()#line:33
-            OO00000O0OOOO00OO =OO00000O0OOOO00OO +1 #line:34
-            print ("Followed: "+str (OO00000O0OOOO00OO ))#line:35
-ed =TwitterBot (username ,password )#line:42
-ed .login ()#line:43
-ed .follow ()
+print ("Welcome to InstaBot made by Iconz")#line:1
+client_name =input ("Email: ")#line:3
+client_pass =input ("Password: ")#line:4
+from selenium import webdriver #line:6
+from selenium .webdriver .common .keys import Keys #line:7
+import time #line:8
+class TwitterBot :#line:11
+    def __init__ (OOO0O000OO000O00O ,OO0O0OOO00O000O00 ,O0OOOOO0O00OO0O00 ):#line:12
+        OOO0O000OO000O00O .username =OO0O0OOO00O000O00 #line:13
+        OOO0O000OO000O00O .password =O0OOOOO0O00OO0O00 #line:14
+        OOO0O000OO000O00O .bot =webdriver .Firefox ()#line:15
+    def login (O0O000O0O0OO0OOOO ):#line:17
+        O00O00OO0OOO00O00 =O0O000O0O0OO0OOOO .bot #line:18
+        O00O00OO0OOO00O00 .get ('https://www.instagram.com/accounts/login/')#line:19
+        time .sleep (4 )#line:20
+        OO0OOO0OOOOOO00OO =O00O00OO0OOO00O00 .find_element_by_name ('username')#line:21
+        O00OO000O00O0OOO0 =O00O00OO0OOO00O00 .find_element_by_name ('password')#line:22
+        OO0OOO0OOOOOO00OO .clear ()#line:23
+        O00OO000O00O0OOO0 .clear ()#line:24
+        OO0OOO0OOOOOO00OO .send_keys (O0O000O0O0OO0OOOO .username )#line:25
+        O00OO000O00O0OOO0 .send_keys (O0O000O0O0OO0OOOO .password )#line:26
+        O00OO000O00O0OOO0 .send_keys (Keys .RETURN )#line:27
+        time .sleep (4 )#line:28
+        O00O00OO0OOO00O00 .find_element_by_xpath ('/html/body/div[3]/div/div/div[3]/button[2]').click ()#line:29
+    def follow (O0OO000O0OO0000OO ):#line:31
+        OOOOO00OOOOO0000O =O0OO000O0OO0000OO .bot #line:32
+        OO00O0OO0O0O0O0O0 =0 #line:33
+        OO0O0OO000000O0OO =0 #line:34
+        OOO00O00O000000OO =0 #line:35
+        for OO00OO0O0O00O0OOO in range (1 ,1000000 ):#line:36
+            OOOOO00OOOOO0000O .get ('https://www.instagram.com/explore/people/suggested/')#line:37
+            time .sleep (5 )#line:38
+            OOOOO00OOOOO0000O .find_element_by_tag_name ('button').click ()#line:39
+            OO00O0OO0O0O0O0O0 =OO00O0OO0O0O0O0O0 +1 #line:40
+            print ("Followed: "+str (OO00O0OO0O0O0O0O0 ))#line:41
+            OOOOO00OOOOO0000O .get ('https://www.instagram.com/')#line:42
+            time .sleep (4 )#line:43
+            OOOOO00OOOOO0000O .find_element_by_xpath ('/html/body/span/section/main/section/div[1]/div[2]/div/article[1]/div[2]/section[1]/span[1]/button').click ()#line:44
+            OO0O0OO000000O0OO =OO0O0OO000000O0OO +1 #line:45
+            print ("Liked: "+str (OO0O0OO000000O0OO ))#line:46
+ed =TwitterBot (client_name ,client_pass )#line:49
+ed .login ()#line:50
+ed .follow ()#line:51
