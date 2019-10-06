@@ -1,0 +1,5 @@
+gechodriver(https://github.com/mozilla/geckodriver/releases)
+
+selenium(pip install selenium) 
+
+Python 3.7.3(https://www.python.org/)
