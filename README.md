@@ -7,3 +7,5 @@ A Instagram follow and like bot.
 3) Download FireFox. 
 4) pip install selenium. 
 
+# How to run
+Open CMD and CD into the python files location. Then run "python app.py"
